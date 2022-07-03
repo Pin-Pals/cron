@@ -4,11 +4,309 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <title>Cron - Pin Pals</title>
+    <style>
+        * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none; 
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-family: 'Space Mono', monospace;
+            font-size: 1em;
+            color: yellow;
+            border-color: gray;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+        }
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+        .container {
+            position: fixed;
+            background-color: black;
+            top: 0px;
+            left: 0px;
+            border-width: 3px;
+            border-style: solid;
+        }
+        .scroll {
+            background-color: red;
+            overflow-x: auto;
+        }
+        #cron_menu {
+            height: calc(100% - 6px);
+            width: 250px;
+        }
+        #global_configs {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            border-bottom: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: gray;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        Work in progress
+    <div id="cron_menu" class="container">
+        <div id="global_configs">
+            <div style="position: absolute; top: 13px; left: 35px">
+                <input type="checkbox" id="mute" name="mute" value="mute">
+                <label for="mute">Mute</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="stopped">
+                <label for="vehicle1">Stopped</label>
+            </div>
+        </div>
+        <div class="scroll" style="position: absolute; top: 52px; height: calc(100% - 52px);width: 100%;">
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+            <div>HELLO!</div>
+        </div>
     </div>
 </body>
 </html>
